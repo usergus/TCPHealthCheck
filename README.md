@@ -2,8 +2,7 @@
 
 ## Contexte
 
-En entreprise il est important de contrôler et maintenir des communications fiables entre les serveurs applicatifs et les serveurs de gestion d'infrastructure. 
-Cependant, il peut arriver que ces flux de communication soient interrompus ou perdus, entraînant des perturbations dans les opérations quotidiennes et la gestion de l'infrastructure.
+En entreprise il peut arriver que des flux de communication soient interrompus ou perdus, entraînant des perturbations dans les opérations quotidiennes et la gestion de l'infrastructure.
 Pour pallier ce problème, voici une solution permettant de tester régulièrement ces flux et de générer des rapports de statut sous forme de JSON, exportable vers un prometheus et grafana ou tout autre système de monitoring.
 
 ## Objectif
