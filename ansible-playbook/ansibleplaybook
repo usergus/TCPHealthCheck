@@ -1,0 +1,14 @@
+- name: TCPhealthcheck
+  hosts: all
+  gather_facts: no
+  tasks:
+     - name: launch TCPcheck
+       script: /root/TCPhealthcheck/TCPhealthcheck.sh
+       register: tcpscanresult
+     
+     - name: sauvegarder les résultats localement
+       delegate_to: localhost
+       run_once: true
+       copy:
+          content: "{{ tcpscanresult.stdout }}"
+          dest: "/chemin/vers/resultats/{{ inventory_hostname }}_result.json" 
