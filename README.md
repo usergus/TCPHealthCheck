@@ -33,3 +33,7 @@ Cela permet de lancer le script de test sur plusieurs machines simultanément et
 ````bash
 git clone <url_du_repo>
 ````
+
+### Script d'installation
+
+à installer : git ansible
